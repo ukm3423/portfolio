@@ -1,5 +1,3 @@
-import React from "react";
-
 import learnifyBanner from "../assets/learnify-banner.png";
 
 export default function Projects() {
