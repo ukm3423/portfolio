@@ -8,11 +8,11 @@ export default function Projects() {
     {
       id: 1,
       title: "Learnify App",
-      image:learnifyBanner,
+      image: learnifyBanner,
       description:
         "An e-learning web application where users can access courses, track progress, and take quizzes.",
       teamSize: 3,
-      technologies: ["React", "Tailwind CSS","Material-UI"],
+      technologies: ["React", "Tailwind CSS", "Material-UI"],
       liveLink: "https://golearnify.netlify.app/",
       githubLink: "https://github.com/ukm3423/learnify",
     },
@@ -29,14 +29,14 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Fitness Tracker",
-      image: "https://source.unsplash.com/400x200/?mobile-app",
+      title: "Inventory Management System",
+      image: "https://source.unsplash.com/400x200/?inventory,warehouse", // replace with local image if available
       description:
-        "A mobile-friendly app for tracking workouts, goals, and diet plans.",
-      teamSize: 1,
-      technologies: ["React", "Firebase", "Tailwind CSS", "Material-UI"],
-      liveLink: "#",
-      githubLink: "#",
+        "A web-based inventory management system to track stock levels, manage product categories, suppliers, and generate reports. It improves warehouse efficiency and reduces manual effort.",
+      teamSize: 2,
+      technologies: ["React", "Spring Boot", "MySQL", "Tailwind CSS"],
+      liveLink: "#", // add deployment link if hosted
+      githubLink: "https://github.com/ukm3423/inventory-management", // replace with actual repo
     },
   ];
 

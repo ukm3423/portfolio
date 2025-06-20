@@ -22,11 +22,12 @@ export default function Intro() {
         and I'm always excited to contribute to impactful projects.
       </p>
 
-      <a href="/path/to/your-resume.pdf" download="Umesh-Kumar-Resume.pdf">
-        <button className="mt-6 px-6 py-3 bg-teal-600 text-white text-sm md:text-base font-semibold rounded-lg shadow-md hover:bg-teal-700 transition duration-300">
-          Download CV
-        </button>
-      </a>
+      <a href="/portfolio/UmeshKumarMahtoResume.pdf" download="Umesh-Kumar-Resume.pdf">
+  <button className="mt-6 px-6 py-3 bg-teal-600 text-white text-sm md:text-base font-semibold rounded-lg shadow-md hover:bg-teal-700 transition duration-300">
+    Download CV
+  </button>
+</a>
+
     </div>
 
     {/* Profile Image */}
