@@ -34,7 +34,7 @@ export default function Projects() {
       description:
         "A mobile-friendly app for tracking workouts, goals, and diet plans.",
       teamSize: 1,
-      technologies: ["React", "Firebase", "Tailwind CSS"],
+      technologies: ["React", "Firebase", "Tailwind CSS", "Material-UI"],
       liveLink: "#",
       githubLink: "#",
     },
