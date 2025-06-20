@@ -4,6 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import './styles.css'; // Import the custom CSS for transitions
 import Projects from '../components/Projects'
 import Intro from '../components/Intro';
+import Contact from '../components/Contact';
 
 const Home: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -138,11 +139,7 @@ const Home: React.FC = () => {
 
 
         <section id="contact" className="min-h-screen bg-gray-200 p-4 pt-20">
-          <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
-          <p>
-            Feel free to reach out to me for any inquiries or collaboration opportunities.
-          </p>
-          {/* Add your contact details or form here */}
+          <Contact />
         </section>
       </main>
     </div>

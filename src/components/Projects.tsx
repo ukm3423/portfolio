@@ -1,4 +1,6 @@
 import learnifyBanner from "../assets/learnify-banner.png";
+import inventoryBanner from "../assets/inventory.jpg";
+import dashboard from "../assets/dashboard.jpg";
 
 export default function Projects() {
 
@@ -17,24 +19,24 @@ export default function Projects() {
     {
       id: 2,
       title: "Admin Dashboard",
-      image: "https://source.unsplash.com/400x200/?dashboard",
+      image: dashboard,
       description:
         "A responsive admin dashboard with charts, analytics, and user management.",
       teamSize: 2,
-      technologies: ["React", "Chart.js", "Tailwind CSS"],
+      technologies: ["React", "Chart.js", "Tailwind CSS", "Java", "Spring Boot", "PostgreSQL"],
       liveLink: "#",
       githubLink: "#",
     },
     {
       id: 3,
       title: "Inventory Management System",
-      image: "https://source.unsplash.com/400x200/?inventory,warehouse", // replace with local image if available
+      image: inventoryBanner, // replace with local image if available
       description:
         "A web-based inventory management system to track stock levels, manage product categories, suppliers, and generate reports. It improves warehouse efficiency and reduces manual effort.",
       teamSize: 2,
-      technologies: ["React", "Spring Boot", "MySQL", "Tailwind CSS"],
+      technologies: ["React", "Spring Boot", "MySQL", "Tailwind CSS", "Docker"],
       liveLink: "#", // add deployment link if hosted
-      githubLink: "https://github.com/ukm3423/inventory-management", // replace with actual repo
+      githubLink: "https://github.com/ukm3423/InventoryDockerApp", // replace with actual repo
     },
   ];
 
