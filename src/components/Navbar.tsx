@@ -1,15 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
 
-const Navbar: React.FC = () => (
-  <nav className="bg-gray-800 p-4">
-    <ul className="flex space-x-4">
-      <li><Link to="/" className="text-white">Home</Link></li>
-      <li><Link to="/about" className="text-white">About</Link></li>
-      <li><Link to="/projects" className="text-white">Projects</Link></li>
-      <li><Link to="/contact" className="text-white">Contact</Link></li>
-    </ul>
-  </nav>
-);
+export default function Navbar() {
+  return (
+    <>
 
-export default Navbar;
+      <header className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50 flex justify-between items-center">
+        <h1 className="text-2xl md:text-3xl font-extrabold ">
+          <span className="text-teal-500">UMESH</span> <span className="text-gray-200">KUMAR </span>
+        </h1>
+        <button
+          className="md:hidden "
+          onClick={toggleDrawer}
+          aria-label="Open menu"
+        >
+          <FaBars size={24} />
+        </button>
+        <nav className="hidden md:flex space-x-4">
+          <a href="#about" className="hover:underline font-semibold">About</a>
+          <a href="#projects" className="hover:underline font-semibold">Projects</a>
+          <a href="#contact" className="hover:underline font-semibold">Contact Us</a>
+        </nav>
+      </header>
+    </>
+  )
+}

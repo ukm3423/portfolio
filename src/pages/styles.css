@@ -1,22 +1,20 @@
 /* styles.css */
-
+/* Drawer slide animation */
 .drawer-enter {
-    transform: translateX(100%);
-  }
-  
-  .drawer-enter-active {
-    transform: translateX(0);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .drawer-exit {
-    transform: translateX(0);
-  }
-  
-  .drawer-exit-active {
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-  }
+  transform: translateX(100%);
+}
+.drawer-enter-active {
+  transform: translateX(0%);
+  transition: transform 300ms ease-in-out;
+}
+.drawer-exit {
+  transform: translateX(0%);
+}
+.drawer-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+
   
 
   /* styles/globals.css or wherever you include global styles */
@@ -36,5 +34,5 @@
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #333;
-  animation: writing 4s steps(40, end) infinite, blink-caret .75s step-end infinite;
+  animation: writing 5s steps(40, end) infinite, blink-caret .75s step-end infinite;
 }
