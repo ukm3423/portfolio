@@ -32,11 +32,11 @@ const Home: React.FC = () => {
 
   return (
     <div className="">
-      <header className="fixed top-0 left-0 w-full bg-gray-900/90 backdrop-blur-md shadow-md z-50 px-6 py-4">
+      <header className="fixed top-0 left-0 w-full bg-gray-900/90 backdrop-blur-md shadow-md z-50 px-6 py-3">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
 
           {/* Logo */}
-          <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-teal-400 via-yellow-300 to-red-400 text-transparent bg-clip-text">
+          <h1 className="text-xl md:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-teal-400 via-yellow-300 to-red-400 text-transparent bg-clip-text">
             UMESH <span className="text-white">KUMAR</span>
           </h1>
 
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
             onClick={toggleDrawer}
             aria-label="Open menu"
           >
-            <FaBars size={24} />
+            <FaBars size={18} />
           </button>
 
           {/* Desktop Navigation */}
