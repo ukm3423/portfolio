@@ -1,6 +1,6 @@
 import learnifyBanner from "../assets/learnify-banner.png";
 import inventoryBanner from "../assets/inventory.jpg";
-import dashboard from "../assets/dashboard.jpg";
+import dashboard from "../assets/dashboard.png";
 
 export default function Projects() {
 

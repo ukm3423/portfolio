@@ -32,25 +32,37 @@ const Home: React.FC = () => {
 
   return (
     <div className="">
-      {/* Navbar */}
-      <header className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50 flex justify-between items-center">
-        <h1 className="text-2xl md:text-3xl font-extrabold ">
-          <span className="text-teal-500">UMESH</span> <span className="text-gray-200">KUMAR </span>
-        </h1>
-        <button
-          className="md:hidden "
-          onClick={toggleDrawer}
-          aria-label="Open menu"
-        >
-          <FaBars size={24} />
-        </button>
-        <nav className="hidden md:flex space-x-4">
-          <a href="#about" className="hover:underline font-semibold">About</a>
-          <a href="#projects" className="hover:underline font-semibold">Projects</a>
-          <a href="#contact" className="hover:underline font-semibold">Contact Us</a>
-        </nav>
-      </header>
+      <header className="fixed top-0 left-0 w-full bg-gray-900/90 backdrop-blur-md shadow-md z-50 px-6 py-4">
+        <div className="flex justify-between items-center max-w-7xl mx-auto">
 
+          {/* Logo */}
+          <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-teal-400 via-yellow-300 to-red-400 text-transparent bg-clip-text">
+            UMESH <span className="text-white">KUMAR</span>
+          </h1>
+
+          {/* Mobile Menu Icon */}
+          <button
+            className="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-teal-400 rounded"
+            onClick={toggleDrawer}
+            aria-label="Open menu"
+          >
+            <FaBars size={24} />
+          </button>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-6 font-medium">
+            <a href="#about" className="text-gray-200 hover:text-teal-400 transition duration-300">
+              About
+            </a>
+            <a href="#projects" className="text-gray-200 hover:text-teal-400 transition duration-300">
+              Projects
+            </a>
+            <a href="#contact" className="text-gray-200 hover:text-teal-400 transition duration-300">
+              Contact
+            </a>
+          </nav>
+        </div>
+      </header>
 
       {/* Backdrop */}
       {isDrawerOpen && (
